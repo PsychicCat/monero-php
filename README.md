@@ -192,7 +192,7 @@ Example response:
 ### splitIntegrated
 
 ```php
-$splitIntegrated = $wallet->splitIntegrated($integrated_address);
+$splitIntegrated = $wallet->splitIntegratedAddress($integrated_address);
 ```
 
 Returns the standard address and payment ID corresponding for a given integrated address.
