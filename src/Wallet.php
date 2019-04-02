@@ -258,4 +258,18 @@ class Wallet
         $body = ['method' => 'stop_wallet'];
         return $this->_request($body);
     }
+	
+	/**
+     * Returns a list of transfers.
+     * @param array $options
+     * @return string
+     */
+    public function getTransfers($options)
+    {
+        $body = [
+            'method' => 'get_transfers',
+            'params' => $options
+        ];
+        return $this->_request($body);
+    }
 }
